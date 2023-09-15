@@ -32,7 +32,14 @@
   --marquee-fade-edges: 30%;
 }
 ::-webkit-scrollbar {
-  display: none;
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--placeholder);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 0;
 }
 body {
   font-family: var(--font-family);
@@ -339,7 +346,7 @@ textarea.form-control {
   position: absolute;
 }
 .why-us .why-us-item i {
-  animation: animate-rotate 4s 2s linear infinite forwards;
+  animation: animate-rotate 4s 3s linear infinite forwards;
 }
 /* End of About content */
 
@@ -520,7 +527,7 @@ textarea.form-control {
   background-attachment: fixed;
 }
 .contact .contact-info {
-  background-color: rgba(52, 169, 187, 0.5);
+  background-color: rgba(52, 169, 187, 0.87);
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
 }
