@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
             nb_sides: 5,
           },
           image: {
-            src: "img/github.svg",
+            src: "../images/snow.svg",
             width: 100,
             height: 100,
           },

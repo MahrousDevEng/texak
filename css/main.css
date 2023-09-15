@@ -1,13 +1,6 @@
 /* Start of Fonts */
 @font-face {
   font-family: "Noto Sans Arabic";
-  src: url(../fonts/NotoSansArabic-Light.ttf);
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Noto Sans Arabic";
   src: url(../fonts/NotoSansArabic-Regular.ttf);
   font-style: normal;
   font-weight: 400;
@@ -82,6 +75,9 @@ a {
 }
 .text-main {
   color: var(--main-color);
+}
+.text-place {
+  color: var(--placeholder);
 }
 .text-dark {
   color: var(--dark) !important;
@@ -321,6 +317,29 @@ textarea.form-control {
 }
 .ambious .ambious-item:hover .label {
   color: var(--main-color);
+}
+/* Why Us Section */
+.why-us {
+  background-color: transparent;
+  background-image: linear-gradient(270deg, #25293d 77%, var(--main-color) 0%);
+  overflow: hidden;
+  padding-top: 80px;
+}
+.why-us .why-us-overlay {
+  background-image: url(../images/why-us-bg.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.15;
+  mix-blend-mode: luminosity;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.why-us .why-us-item i {
+  animation: animate-rotate 4s 2s linear infinite forwards;
 }
 /* End of About content */
 
@@ -580,11 +599,43 @@ textarea.form-control {
 }
 /* End of Footer */
 
-@keyframes animate-marquee {
+@-webkit-keyframes animate-marquee {
   0% {
+    -webkit-transform: translateX(-100%) translateZ(0);
     transform: translateX(-100%) translateZ(0);
   }
   100% {
+    -webkit-transform: translateX(0%) translateZ(0);
     transform: translateX(0%) translateZ(0);
+  }
+}
+@keyframes animate-marquee {
+  0% {
+    -webkit-transform: translateX(-100%) translateZ(0);
+    transform: translateX(-100%) translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateX(0%) translateZ(0);
+    transform: translateX(0%) translateZ(0);
+  }
+}
+@-webkit-keyframes animate-rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
