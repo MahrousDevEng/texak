@@ -261,6 +261,12 @@ textarea.form-control {
 .banner-slider .swiper-btn-prev {
   left: 1rem;
 }
+@media screen and (max-width: 767px) {
+  .banner-slider .swiper-btn-next,
+  .banner-slider .swiper-btn-prev {
+    display: none;
+  }
+}
 /* End of Banner */
 
 /* Start of Services Section */
