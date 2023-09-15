@@ -269,7 +269,30 @@ textarea.form-control {
 }
 /* End of Banner */
 
-/* Start of About Section */
+/* Start of About Content */
+/* About Section */
+.about {
+  background-image: url(../images/about-bg2.webp);
+  background-size: cover;
+}
+.about .about-images .big-img {
+  border-radius: var(--radius);
+  width: 100%;
+}
+.about .about-images .small-img {
+  border-radius: var(--radius);
+  position: absolute;
+  bottom: 0;
+  right: -2.5rem;
+}
+@media screen and (max-width: 767px) {
+  .about .about-images .small-img {
+    max-width: 250px;
+    right: 2rem;
+    bottom: -1.5rem;
+  }
+}
+/* Ambious Section */
 .ambious {
   background-image: var(--gradient);
   background-size: cover;
@@ -299,7 +322,7 @@ textarea.form-control {
 .ambious .ambious-item:hover .label {
   color: var(--main-color);
 }
-/* End of About Section */
+/* End of About content */
 
 /* Start of Services Section */
 .services .service-item {
