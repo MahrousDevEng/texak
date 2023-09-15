@@ -269,6 +269,38 @@ textarea.form-control {
 }
 /* End of Banner */
 
+/* Start of About Section */
+.ambious {
+  background-image: var(--gradient);
+  background-size: cover;
+}
+.ambious .ambious-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+.ambious .ambious-item {
+  position: relative;
+  z-index: 3;
+  border-radius: var(--radius);
+  height: 100%;
+  text-align: center;
+}
+.ambious .ambious-item img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.ambious .ambious-item .label {
+  font-weight: 600;
+  flex-grow: 1;
+}
+.ambious .ambious-item:hover .label {
+  color: var(--main-color);
+}
+/* End of About Section */
+
 /* Start of Services Section */
 .services .service-item {
   background-color: var(--main-light);
