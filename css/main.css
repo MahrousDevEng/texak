@@ -348,6 +348,10 @@ textarea.form-control {
 .why-us .why-us-item i {
   animation: animate-rotate 4s 3s linear infinite forwards;
 }
+/* Start of Merits */
+.merits img {
+  border-radius: var(--radius);
+}
 /* End of About content */
 
 /* Start of Services Section */
